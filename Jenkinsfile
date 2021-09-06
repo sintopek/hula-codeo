@@ -24,14 +24,6 @@ pipeline {
                 sh "cd hula && cargo build --release"
             }
         }
-        stage('Test') {
-            steps {
-            }
-        }
-        stage('Deploy') {
-            steps {
-            }
-        }
     }
     post {
         success {
