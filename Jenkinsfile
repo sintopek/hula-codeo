@@ -14,6 +14,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh "rm -rf hula"
                 sh "mkdir hula"
                 sh "cd hula && git clone https://github.com/ninjapiraatti/poc-rust-vue.git"
                 sh "cd hula && mkdir -p public"
